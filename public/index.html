@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraîneur Adaptatif de Calcul Mental</title>
+    <!-- Chargement de Tailwind CSS pour le style. -->
+    <!-- En production, on utiliserait un fichier CSS compilé, mais ici on utilise le CDN pour la simplicité. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuration de la police Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Pour optimiser la saisie numérique sur mobile */
+        #answerInput::-webkit-outer-spin-button,
+        #answerInput::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #answerInput {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+    <!-- Le point où l'application React sera injectée -->
+    <div id="root"></div>
+
+    <!-- Les scripts sont généralement chargés à la fin du corps -->
+    <!-- REMARQUE : Dans un environnement réel (avec Webpack/Vite), un seul fichier JS minifié serait chargé ici. -->
+    <!-- Ici, nous simulerons le chargement du bundle. Le fichier index.js contient le code de démarrage. -->
+    <script type="module" src="./src/index.js"></script> 
+</body>
+</html>
